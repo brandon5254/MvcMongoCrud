@@ -1,0 +1,20 @@
+﻿@model Producto
+
+
+
+<h1 class="text-muted">Editar Producto</h1>
+
+<form method="post">
+    <input class="form-control" hidden name="id" type="text" value="@Model._id" required />
+    <label>Nombre</label>
+    <input class="form-control" name="nombre" type="text" value="@Model.nombre" required />
+    <label>Descripcion</label>
+    <input class="form-control" name="descripcion" type="text" value="@Model.descripcion" required />
+    <label>Precio</label>
+    <input class="form-control" name="precio" type="number" value="@Model.precio" required />
+    <label>Imagen</label>
+    <input class="form-control" name="imagen" type="text" value="@Model.imagen" required />
+    <br />
+    <button class="btn btn-secondary">Actualizar producto</button>
+
+</form>
