@@ -1,44 +1,46 @@
-﻿
-@model List<Producto>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/styles.css">
+</head>
+<body class="blue-background">
+    <!-- Agrega la clase blue-background al cuerpo -->
+    @model List<Producto>
 
-<h3>Lista de productos:</h3>
-<br />
-<a class="btn btn-primary" asp-controller="Home" asp-action="InsertarProducto">Insertar un producto</a>
-<br />
+    <h3>Lista de productos:</h3>
+    <br />
+    <a class="btn btn-primary" asp-controller="Home" asp-action="InsertarProducto">Insertar un producto</a>
+    <br />
 
-@if (Model != null)
-{
-    <table class="table table-striped table-hover">
-
-        <thead>
-        <th>Nombre</th>
-        <th>Descripcion</th>
-        <th>Precio</th>
-        <th>Imagen</th>
-        <th>Editar</th>
-        <th>Eliminar</th>
-        <tbody>
+    @if (Model != null)
+    {
+        <table class="table table-striped table-hover">
+            <thead>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+            </thead>
+            <tbody>
                 @foreach (Producto p in @Model)
                 {
-                <tr>
-                    <td>@p.nombre</td>
-                    <td>@p.descripcion</td>
-                    <td>@p.precio €</td>
-                    <td><img src="@p.imagen" style="width:150px; height:150px" /></td>
-                    <td><a class="btn btn-outline-warning" asp-controller="Home" asp-action="Editar" asp-route-id="@p._id.ToString()">Editar</a></td>
-                    <td><a class="btn btn-outline-danger" asp-controller="Home" asp-action="Eliminar" asp-route-id="@p._id">Eliminar</a></td>
-
-                </tr>
+                    <tr>
+                        <td>@p.nombre</td>
+                        <td>@p.descripcion</td>
+                        <td>@p.precio €</td>
+                        <td><img src="@p.imagen" style="width:150px; height:150px" /></td>
+                        <td><a class="btn btn-outline-warning" asp-controller="Home" asp-action="Editar" asp-route-id="@p._id.ToString()">Editar</a></td>
+                        <td><a class="btn btn-outline-danger" asp-controller="Home" asp-action="Eliminar" asp-route-id="@p._id">Eliminar</a></td>
+                    </tr>
                 }
-
-        </tbody>
-
-
-    </table>
-}
-else
-{
-    <h4>@ViewBag.mensaje</h4>
-}
-
-<br />
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h4>@ViewBag.mensaje</h4>
+    }
+</body>
+</html>

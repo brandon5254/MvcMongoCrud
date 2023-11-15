@@ -1,7 +1,12 @@
+using MvcMongoCrud.Data;
+using MvcMongoCrud.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<ProductosContext>();
+builder.Services.AddTransient<RepositoryProductos>();
 
 var app = builder.Build();
 

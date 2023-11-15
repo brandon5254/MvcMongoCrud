@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\OneDrive\\Escritorio\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj": {}
+    "C:\\Users\\brand\\OneDrive\\Documentos\\GitHub\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\OneDrive\\Escritorio\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj": {
+    "C:\\Users\\brand\\OneDrive\\Documentos\\GitHub\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\OneDrive\\Escritorio\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\OneDrive\\Documentos\\GitHub\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj",
         "projectName": "MvcMongoCrud",
-        "projectPath": "C:\\Users\\brand\\OneDrive\\Escritorio\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj",
+        "projectPath": "C:\\Users\\brand\\OneDrive\\Documentos\\GitHub\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\OneDrive\\Escritorio\\MvcMongoCrud\\MvcMongoCrud\\obj\\",
+        "outputPath": "C:\\Users\\brand\\OneDrive\\Documentos\\GitHub\\MvcMongoCrud\\MvcMongoCrud\\MvcMongoCrud\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
