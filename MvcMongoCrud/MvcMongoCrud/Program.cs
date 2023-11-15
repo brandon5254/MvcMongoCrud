@@ -8,6 +8,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ProductosContext>();
 builder.Services.AddTransient<RepositoryProductos>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
